@@ -1,66 +1,4 @@
 /* . is class # is id */
-/* sidebar */
-/* The side navigation menu */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  /* background-color: white; */
-  position: fixed;
-  top: 100px; right: 40px;
-  height: 100%;
-  overflow: auto;
-  float: right;
-}
-
-/* Sidebar links */
-.sidebar a {
-  display: float;
-  color: black;
-  padding: 0;
-  text-decoration: none;
-}
-
-/* Active/current link */
-.sidebar a.active {
-  background-color: rgb(118, 188, 244);
- 
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: rgb(118, 188, 244);
-  border-width: 30px;
-  border-color: rgb(118, 188, 244);
-  color: white;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-/* @media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float:left;}
-  div.content {margin-left: 0;}
-} */
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-/* @media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-} */
 /* media sizes  */
 @media screen and (max-width: 700px) {
   .media7 {
@@ -68,6 +6,7 @@ div.content {
     height: auto;
     position: relative;
     top: 100px;
+    font-size: smaller;
   }
   .sidebar {
     width: 100%;
@@ -108,6 +47,9 @@ h2 {
 .bblue{
   background-color:rgb(118, 188, 244);
 }
+.bwhite{
+  background-color:white;
+}
 .white{
   color:white;
 }
@@ -125,11 +67,18 @@ h2 {
 .right{
   right: 10px;
 }
-
-.purple {
-  color: rgba(98, 0, 255, 0.578);
+.borwhite{
+  border-color: white;
+  border-width: thin;
+  border-style: dotted;
 }
-
 .bigish{
   font: size 50px;;
+}
+
+.popup {
+  margin-top: 60px; 
+	margin-bottom: 62px; 
+	padding: 10px 20px 15px; 
+	color:black;
 }
